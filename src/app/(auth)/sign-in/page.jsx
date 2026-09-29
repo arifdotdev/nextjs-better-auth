@@ -9,6 +9,7 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import Link from "next/link";
 
 const SignInPage = () => {
   const onSubmit = async (e) => {
@@ -73,11 +74,13 @@ const SignInPage = () => {
             {/* <Check /> */}
             Submit
           </Button>
-          <Button type="reset" variant="secondary">
-            Reset
-          </Button>
+            <Button type="reset" variant="secondary">
+              Reset
+            </Button>
         </div>
       </Form>
+      <div>or</div>
+      <Link href='/forgot-password' className="btn ">forgot password</Link>
     </div>
   );
 };
